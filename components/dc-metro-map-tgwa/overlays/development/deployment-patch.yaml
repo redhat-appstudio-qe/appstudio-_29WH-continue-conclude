@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-tgwa
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-okuf-tenant/appstudio/dc-metro-map-tgwa@sha256:fc7edbad7203204d93772a1c6c85632fccd72515ba3955280d921ca51ae87642
+        name: my-nodejs
+        resources: {}
+status: {}
